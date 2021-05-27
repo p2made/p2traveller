@@ -1,0 +1,39 @@
+config travelmate 'global'
+	option trm_captive				'1'
+	option trm_proactive			'1'
+	option trm_netcheck				'0'
+	option trm_autoadd				'0'
+	option trm_mail					'0'
+	option trm_vpn					'0'
+	option trm_debug				'0'
+	option trm_enabled				'1'
+	option trm_iface				'trm_wwan'
+
+config uplink
+	option enabled					'1'
+	option device					'radio1'
+	option ssid						'Warped-Guest-5G'
+	option con_start_expiry			'0'
+	option con_end_expiry			'0'
+
+config uplink
+	option enabled					'1'
+	option device					'radio0'
+	option ssid						'Warped-Guest'
+	option con_start_expiry			'0'
+	option con_end_expiry			'0'
+
+config uplink
+	option enabled					'1'
+	option device					'radio1'
+	option ssid						'Warped-Intentions-5G'
+	option con_start_expiry			'0'
+	option con_end_expiry			'0'
+	option con_start				'2021.05.24-17:24:48'
+
+config uplink
+	option enabled					'1'
+	option device					'radio0'
+	option ssid						'Warped-Intentions'
+	option con_start_expiry			'0'
+	option con_end_expiry			'0'
