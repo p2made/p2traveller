@@ -8,5 +8,6 @@ passwd
 
 # folders
 /tmp
+/usr
 /z_previous
 /z_gitignore
