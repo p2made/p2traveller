@@ -1,0 +1,48 @@
+# travelmate configuration, for further information
+# see 'https://github.com/openwrt/packages/blob/master/net/travelmate/files/README.md'
+
+config travelmate 'global'
+	option trm_enabled          '1'
+	option trm_captive          '1'
+	option trm_proactive        '1'
+	option trm_netcheck         '0'
+	option trm_autoadd          '0'
+	option trm_mail             '0'
+	option trm_vpn              '0'
+	option trm_iface            'trm_wwan'
+	option trm_triggerdelay     '2'
+	option trm_debug            '0'
+	option trm_maxretry         '5'
+	option trm_listexpiry       '0'
+	option trm_minquality       '35'
+	option trm_maxwait          '30'
+	option trm_timeout          '60'
+	option trm_rtfile           '/tmp/trm_runtime.json'
+
+config uplink
+	option ssid                 'Warped-Guest'
+	option device               'radio0'
+	option con_start_expiry     '0'
+	option con_end_expiry       '0'
+	option enabled              '1'
+
+config uplink
+	option ssid                 'Warped-Guest-5G'
+	option device               'radio1'
+	option con_start_expiry     '0'
+	option con_end_expiry       '0'
+	option enabled              '1'
+
+config uplink
+	option ssid                 'Warped-Intentions'
+	option device               'radio0'
+	option con_start_expiry     '0'
+	option con_end_expiry       '0'
+	option enabled              '1'
+
+config uplink
+	option ssid                 'Warped-Intentions-5G'
+	option device               'radio1'
+	option con_start_expiry     '0'
+	option con_end_expiry       '0'
+	option enabled              '1'
