@@ -20,28 +20,28 @@ config travelmate 'global'
 	option trm_rtfile           '/tmp/trm_runtime.json'
 
 config uplink
-	option ssid                 'Warped-Guest'
+	option ssid                 'First-Public-WiFi'
 	option device               'radio0'
 	option con_start_expiry     '0'
 	option con_end_expiry       '0'
 	option enabled              '1'
 
 config uplink
-	option ssid                 'Warped-Guest-5G'
+	option ssid                 'First-Public-WiFi-5G'
 	option device               'radio1'
 	option con_start_expiry     '0'
 	option con_end_expiry       '0'
 	option enabled              '1'
 
 config uplink
-	option ssid                 'Warped-Intentions'
+	option ssid                 'Next-Public-WiFi'
 	option device               'radio0'
 	option con_start_expiry     '0'
 	option con_end_expiry       '0'
 	option enabled              '1'
 
 config uplink
-	option ssid                 'Warped-Intentions-5G'
+	option ssid                 'Next-Public-WiFi-5G'
 	option device               'radio1'
 	option con_start_expiry     '0'
 	option con_end_expiry       '0'
