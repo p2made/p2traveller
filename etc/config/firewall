@@ -4,21 +4,22 @@ config defaults
 	option output 'ACCEPT'
 	option forward 'REJECT'
 
-config zone
+config zone 'lan'
 	option name 'lan'
 	option input 'ACCEPT'
 	option output 'ACCEPT'
 	option forward 'ACCEPT'
 	option network 'lan'
 
-config zone
+config zone 'wan'
 	option name 'wan'
 	option input 'REJECT'
 	option output 'ACCEPT'
 	option forward 'REJECT'
 	option masq '1'
 	option mtu_fix '1'
-	option network 'wan wan6 wwan'
+	option network 'wan wan6 wwan trm_wwan'
+	list device 'tun+'
 
 config forwarding
 	option src 'lan'
