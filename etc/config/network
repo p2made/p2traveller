@@ -17,7 +17,7 @@ config interface 'lan'
 
 config device 'lan_eth0_1_dev'
 	option name 'eth0.1'
-	option macaddr 'd8:47:32:bf:a6:4e'
+	option macaddr '4A:6E:01:56:56:E8'
 
 config switch
 	option name 'switch0'
